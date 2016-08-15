@@ -1,0 +1,20 @@
+.todoitem-component {
+  padding: 5px 0;
+  list-style:none;
+  label{
+    cursor: pointer;
+  }
+  input{
+    cursor: pointer;
+  }
+  span{
+    font-size: 18px;
+
+  }
+  &.done{
+    span{
+      text-decoration: line-through;
+
+    }
+  }
+}

@@ -1,0 +1,11 @@
+/* Base Application Styles */
+body {
+  color: darkslategrey;
+  font-family: 'Open Sans Condensed', sans-serif;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIklEQVQIW2NkQALPnj1LY4TxQRwpKalZYAEYB8RmROaABADmYQ8dyw+TgAAAAABJRU5ErkJggg==);
+
+}
+
+*{
+  box-sizing: border-box;
+}
