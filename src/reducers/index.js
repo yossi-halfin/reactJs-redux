@@ -47,7 +47,7 @@ const initialState = {
 
 function todo(state = initialState, action){
   switch(action.type){
-    case ADD_TODO: 
+    case ADD_TODO:
       state.todos.push(action.object);
       return state;
     case REMOVE_TODO:
@@ -55,8 +55,6 @@ function todo(state = initialState, action){
       return state;
     default:
       return state;
-
-
   }
 }
 

@@ -7,9 +7,7 @@ import AddTodo from './AddTodoComponent';
 
 import {addTodo, removeTodo} from '../actions/const';
 
-
-
-let todosList = [];
+ 
 
 class AppComponent extends React.Component {
 
@@ -19,11 +17,11 @@ class AppComponent extends React.Component {
       todos:this.context.store.getState().todo.todos
     }
   }
- 
+
 
   addTODO(taskTXT){
     this.context.store.dispatch(addTodo({
-      'id':todosList.length+1,
+      'id':this.state.todos.length+1,
       'description' : taskTXT,
       'isDone':false
     }));
