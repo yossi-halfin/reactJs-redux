@@ -6,15 +6,13 @@ import TodoItem from './TodoItemComponent';
 require('styles/TodoList.scss');
 
 class TodoListComponent extends React.Component {
-
   render() {
-    var self = this;
     return (
       <div className="todolist-component">
         <h2>TODOS:</h2>
         <ul >
-          {this.props.list.map(function (task,index) {
-            return <TodoItem deleteTodo={self.props.deleteItem} key={index} task={task}/>
+          {this.props.list.map((task,index)=>{
+            return <TodoItem deleteTodo={this.props.deleteItem} key={index} task={task}/>
           })}
         </ul>
       </div>

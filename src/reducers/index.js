@@ -35,7 +35,7 @@ const initialState = {
     {
       'id':5,
       'description' : 'Take Gracie to the park',
-      'isDone':false
+      'isDone':true
     },
     {
       'id':6,
