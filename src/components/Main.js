@@ -7,7 +7,7 @@ import AddTodo from './AddTodoComponent';
 
 import {addTodo, removeTodo} from '../actions/const';
 
- 
+
 
 class AppComponent extends React.Component {
 
@@ -17,7 +17,6 @@ class AppComponent extends React.Component {
       todos:this.context.store.getState().todo.todos
     }
   }
-
 
   addTODO(taskTXT){
     this.context.store.dispatch(addTodo({
@@ -31,12 +30,12 @@ class AppComponent extends React.Component {
     var index = index-1;
     this.context.store.dispatch(removeTodo(index));
   }
-
-
+  
   render() {
     this.context.store.subscribe(() =>
       this.setState({todos:this.context.store.getState().todo.todos})
     )
+    
     return (
       <div className='index'>
         <AddTodo addNewTodo={this.addTODO.bind(this)}/>

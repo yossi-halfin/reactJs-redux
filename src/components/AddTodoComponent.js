@@ -9,7 +9,6 @@ class AddTodoComponent extends React.Component {
     this.state = {taskTxt:''};
   }
   addNewItem(e){
-
     this.props.addNewTodo(this.state.taskTxt);
     this.setState({taskTxt:''});
     e.preventDefault();
